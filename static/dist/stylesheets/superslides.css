@@ -1,0 +1,135 @@
+#slides {
+  position: relative;
+}
+#slides .slides-container {
+  display: none;
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+.slides-navigation a.prev {
+  left: 0;
+}
+.slides-navigation a.next {
+  right: 0;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 2px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+.slides-pagination a.current {
+  background: #fff;
+}
+.container{
+    position: relative;
+    width: 50%;
+    left: 55px;
+    top: 13%;
+    padding: 10px 20px;
+  }
+  .h1-slide {
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 1px #000;
+    margin: 30px 0;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+.p-slide {
+    font-size: 1.39058em;
+    color: #e6e6e6;
+    text-shadow: 0 1px 1px #555;
+    display: inherit;
+}
+.contrast {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1px 10px;
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: 50px;
+    text-align: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+.dis{
+  display: inherit;
+  color: #e6e6e6;
+  text-shadow: 0 1px 1px #555;
+  font-size: 1.39058em;
+}
+@media screen and (max-width: 1400px){
+  .h1-slide{
+    font-size: 35px;
+  }
+  .p-slide{
+    font-size: 1.2em;
+  }
+  .dis{
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 900px){
+  .contrast{
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  .container{
+    left: 20px;
+    width: 70%;
+  }
+  .dis{
+    display: none;
+  }
+}
+.p-apj{
+  font-size: 15px;
+  margin:0 auto;
+  display: inline-block;
+  margin-top: 50px;
+}
